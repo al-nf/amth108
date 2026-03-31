@@ -2,7 +2,7 @@
 #let course  = "Probability & Statistics"
 #let name    = "Homework 1"
 #let student = "Alan Fung"
-#let date    = "2026-03-31"
+#let date    = "6 Apr. 2026"
 // -----------------------------------------------------
 
 // top
@@ -21,11 +21,11 @@
   block(
     breakable: false,
     stroke: 0.5pt + luma(180),
-    radius: 10pt,
+    radius: 4pt,
     inset: (x: 8pt, y: 12pt),
     width: 100%,
   )[
-    *#num)*
+    *#num:*
     #v(2pt)
     #body
   ]
@@ -38,7 +38,6 @@
 }
 
 #let qed = {
-  v(1em)
   align(right, sym.qed)
 }
 // -----------------------------------------------------
@@ -103,16 +102,16 @@
 
 // ── Extra 1 ──────────────────────────────────────────
 #problem("Extra 1")[
-  *Claim:* $P(E) + P(E^c) = 1$ for $E$, the collection of $n$ equally likely outcomes.
+  *Claim:* $P(E) + P(E^c) = 1$ where $E$ is the collection of $k$ equally likely outcomes.
 
-  *Proof:* $E$ consists of $k$ outcomes. Then $E^c$ contains $n - k$ outcomes, so
+  *Proof:* If $n$ is the number of equally likely outcomes and $E$ consists of $k$ outcomes, then $E^c$ contains $n - k$ outcomes. So:
 
   $
     P(E) + P(E^c)
-      = frac(k, n) + frac(n - k, n)
-      = frac(k + n - k, n)
-      = frac(n, n)
-      = 1. #qed
+      = k/n + (n-k)/n
+      = (k + n - k)/n
+      = n/n
+      = 1. quad #qed
   $
 ]
 
@@ -126,6 +125,8 @@
       columns: (auto, auto),
       align: center,
       table.header([Sum], [Permutations]),
+      [0],  [0],
+      [1],  [0],
       [2],  [1],
       [3],  [2],
       [4],  [3],
@@ -157,8 +158,16 @@
       columns: (auto, auto),
       align: center,
       table.header([Die 1], [Die 2]),
-      [1],[2], [2],[3], [3],[4], [4],[5], [5],[6],
-      [6],[5], [5],[4], [4],[3], [3],[2], [2],[1],
+      [1],[2],
+      [2],[1],
+      [2],[3],
+      [3],[2],
+      [3],[4],
+      [4],[3], 
+      [4],[5],
+      [5],[4], 
+      [5],[6],
+      [6],[5], 
     )
   ]
 
