@@ -51,13 +51,15 @@
 
 // ── Problem 10 ───────────────────────────────────────
 #problem(10)[
+  In investigating the Ideal Gas Law, experiments are to be run at four different
+pressures and three different temperatures.
   #part("a",
     [How many experimental conditions are to be studied?],
     [$4 times 3 = 12$ conditions]
   )
   #part("b",
-    [If each experimental condition is replicated 5 times, how many
-     experiments will be conducted on a given gas?],
+    [If each experimental condition is replicated (repeated) 5 times, how many
+experiments will be conducted on a given gas?],
     [$12 times 5 = 60$ experiments]
   )
   #part("c",
@@ -69,6 +71,10 @@
 
 // ── Problem 13 ───────────────────────────────────────
 #problem(13)[
+  The Apollo mission to land humans on the moon made use of a system. For the system to operate successfully, all
+five components shown must function properly. Let us identify each compo-
+nent as being either operable (O) or inoperable (i). Thus the sequence OOOOi
+denotes a state in which all components except the LEM engine are operable.
   #part("a",
     [How many states are possible?],
     [$2^5 = 32$ states]
@@ -90,6 +96,12 @@
 
 // ── Problem 14 ───────────────────────────────────────
 #problem(14)[
+  The basic storage unit of a digital computer is a “bit.” A bit is a storage position that can be designated as either on (1) or off (0) at any given time. In
+converting picture images to a form that can be transmitted electronically,
+a picture element, called a pixel is used. Each pixel is quantized into gray
+levels and coded using a binary code. For example, a pixel with four gray
+levels can be coded using two bits by designating the gray levels by 00, 01,
+10, and 11.
   #part("a",
     [How many gray levels can be quantized using a 4-bit code?],
     [$2^4 = 16$ gray levels]
@@ -102,7 +114,12 @@
 
 // ── Extra 1 ──────────────────────────────────────────
 #problem("Extra 1")[
-  *Claim:* $P(E) + P(E^c) = 1$ where $E$ is the collection of $k$ equally likely outcomes.
+  Suppose that an experiment may proceed in any of $n$
+possible, equally likely ways. Call each of these ways an
+outcome. Let $E$ be a collection of $k$ of these outcomes
+(think of this set as containing outcomes of interest).
+Show that $P(E)+P(E^c)=1$ (here $E^c$ is the complement of
+$E$ = set of outcomes not in $E$)
 
   *Proof:* If $n$ is the number of equally likely outcomes and $E$ consists of $k$ outcomes, then $E^c$ contains $n - k$ outcomes. So:
 
@@ -117,8 +134,14 @@
 
 // ── Extra 2 ──────────────────────────────────────────
 #problem("Extra 2")[
-  Two six-sided dice are rolled and their faces summed.
-  The number of permutations for each sum is:
+  Two dice are rolled and the values on the upturned
+faces are added together. Which is more likely (has a
+larger probability):
+
+A: sum = even number or \
+B: sum = odd number?
+
+The number of permutations for each sum is:
 
   #align(center)[
     #table(
@@ -151,6 +174,9 @@
 
 // ── Extra 3 ──────────────────────────────────────────
 #problem("Extra 3")[
+  (continued from Extra 2) What is the probability
+that the two numbers showing on the upturned faces differ by 1?
+
   Let us list all outcomes where the upturned faces differ by exactly one:
 
   #align(center)[
