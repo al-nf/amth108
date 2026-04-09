@@ -49,7 +49,6 @@
 
 #header
 
-// ── Problem 10 ───────────────────────────────────────
 #problem(10)[
   In investigating the Ideal Gas Law, experiments are to be run at four different
 pressures and three different temperatures.
@@ -69,7 +68,6 @@ experiments will be conducted on a given gas?],
   )
 ]
 
-// ── Problem 13 ───────────────────────────────────────
 #problem(13)[
   The Apollo mission to land humans on the moon made use of a system. For the system to operate successfully, all
 five components shown must function properly. Let us identify each compo-
@@ -94,7 +92,6 @@ denotes a state in which all components except the LEM engine are operable.
   )
 ]
 
-// ── Problem 14 ───────────────────────────────────────
 #problem(14)[
   The basic storage unit of a digital computer is a “bit.” A bit is a storage position that can be designated as either on (1) or off (0) at any given time. In
 converting picture images to a form that can be transmitted electronically,
@@ -112,7 +109,6 @@ levels can be coded using two bits by designating the gray levels by 00, 01,
   )
 ]
 
-// ── Extra 1 ──────────────────────────────────────────
 #problem("Extra 1")[
   Suppose that an experiment may proceed in any of $n$
 possible, equally likely ways. Call each of these ways an
@@ -132,7 +128,6 @@ $E$ = set of outcomes not in $E$)
   $
 ]
 
-// ── Extra 2 ──────────────────────────────────────────
 #problem("Extra 2")[
   Two dice are rolled and the values on the upturned
 faces are added together. Which is more likely (has a
@@ -172,7 +167,6 @@ The number of permutations for each sum is:
   The sum is equally likely to be even or odd.
 ]
 
-// ── Extra 3 ──────────────────────────────────────────
 #problem("Extra 3")[
   (continued from Extra 2) What is the probability
 that the two numbers showing on the upturned faces differ by 1?
