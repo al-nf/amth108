@@ -16,10 +16,10 @@
   v(4pt)
 }
 
-#let problem(num, body) = {
+#let problem(num, breakable: false, body) = {
   v(8pt)
   block(
-    breakable: false,
+    breakable: breakable,
     stroke: 0.5pt + luma(180),
     radius: 4pt,
     inset: (x: 8pt, y: 12pt),
@@ -50,10 +50,4 @@
 #header
 
 #problem(1)[
-  #part("a",
-    [
-    ],
-    [
-    ]
-  )
 ]
